@@ -1,0 +1,207 @@
+/* EDUCATION & EXTRA STYLES */
+
+.edu-extra-container {
+  background: transparent;
+}
+
+.compact-header {
+  margin-bottom: 2rem;
+}
+
+.edu-card {
+  padding: 2.25rem 2.5rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  max-width: 800px;
+}
+
+.edu-card-content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.edu-logo-badge {
+  width: 60px;
+  height: 60px;
+  border-radius: var(--radius-md);
+  background: var(--accent-teal-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  flex-shrink: 0;
+}
+
+.edu-info {
+  flex-grow: 1;
+}
+
+.edu-dates {
+  font-family: var(--font-pixel);
+  font-size: 0.65rem;
+  color: var(--accent-teal);
+  letter-spacing: 0.05em;
+}
+
+.edu-institution {
+  font-size: 1.35rem;
+  font-weight: 800;
+  margin: 0.2rem 0;
+}
+
+.edu-degree {
+  font-size: 1rem;
+  color: var(--text-secondary);
+}
+
+.edu-cgpa-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent-orange-light);
+  border: 1px solid rgba(232, 106, 56, 0.3);
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-md);
+}
+
+.cgpa-label {
+  font-family: var(--font-pixel);
+  font-size: 0.6rem;
+  color: var(--accent-orange);
+}
+
+.cgpa-val {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.6rem;
+  color: var(--accent-orange);
+  line-height: 1;
+}
+
+/* EXTRA GRID */
+.extra-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.extra-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.extra-icon-badge {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.extra-card-title {
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.extra-card-desc {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+/* BUILDING SECTION */
+.building-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 2rem;
+}
+
+.building-card {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  border: 2px dashed var(--accent-teal);
+  background: var(--accent-teal-light);
+}
+
+.building-status-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.status-badge {
+  font-family: var(--font-pixel);
+  font-size: 0.65rem;
+  background: var(--accent-orange);
+  color: #FFF;
+  padding: 0.3rem 0.75rem;
+  border-radius: var(--radius-full);
+}
+
+.building-title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  margin-bottom: 0.25rem;
+  color: var(--accent-teal);
+}
+
+.building-subtitle {
+  color: var(--text-primary);
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.building-desc {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.building-subheading {
+  color: var(--accent-teal);
+  font-size: 0.9rem;
+  font-weight: 800;
+  margin: 1.25rem 0 0.5rem;
+}
+
+.building-feature-list {
+  display: grid;
+  gap: 0.55rem;
+  padding-left: 1.25rem;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.building-feature-list strong,
+.building-future strong {
+  color: var(--text-primary);
+}
+
+.building-future {
+  margin-top: 1rem;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.building-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .edu-card-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .extra-grid, .building-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,91 @@
+.resume-modal {
+  max-width: 850px;
+  max-height: 85vh;
+  padding: 2.5rem;
+}
+
+.resume-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid var(--border-dark);
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
+.resume-name {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 0.2rem;
+}
+
+.resume-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--accent-teal);
+  margin-bottom: 0.4rem;
+}
+
+.resume-contact-line {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.resume-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.resume-section-title {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--accent-teal);
+  letter-spacing: 0.05em;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 0.75rem;
+}
+
+.resume-item {
+  margin-bottom: 0.75rem;
+}
+
+.resume-item-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.2rem;
+}
+
+.item-bold {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.item-date, .item-link {
+  font-size: 0.85rem;
+  color: var(--accent-orange);
+  font-weight: 600;
+}
+
+.item-sub {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.item-desc {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.resume-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+}
