@@ -5,6 +5,7 @@ if (!gl) return function cleanupUnavailableWebGL() {};
 
 function resize() { canvas.width = window.innerWidth; canvas.height = window.innerHeight; }
 resize();
+var sceneWidth = window.innerWidth;
 
 var SIM_HEIGHT = 3.0, cScale, simWidth;
 function updateScale() { cScale = canvas.height / SIM_HEIGHT; simWidth = canvas.width / cScale; }
@@ -359,7 +360,17 @@ function update(now){
 }
 
 // INITIALIZE
-function handleResize() { resize(); setupScene(); }
+function handleResize() {
+  var nextWidth = window.innerWidth;
+
+  // Mobile browsers fire resize while the address bar expands/collapses during
+  // scrolling. Keep the existing canvas and simulation for height-only changes.
+  if (Math.abs(nextWidth - sceneWidth) <= 2) return;
+
+  sceneWidth = nextWidth;
+  resize();
+  setupScene();
+}
 function handleVisibilityChange() {
   if (document.hidden) {
     cancelAnimationFrame(animationFrame);
