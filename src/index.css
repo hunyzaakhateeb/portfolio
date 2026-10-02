@@ -125,6 +125,34 @@ button {
   }
 }
 
+@media (max-width: 480px) {
+  .container {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .section-padding {
+    padding: 3.25rem 0;
+  }
+
+  .section-header {
+    margin-bottom: 2rem;
+  }
+
+  .section-title {
+    font-size: clamp(1.9rem, 9vw, 2.6rem);
+    overflow-wrap: anywhere;
+  }
+
+  .section-subtitle {
+    font-size: 1rem;
+  }
+
+  .modern-card {
+    padding: 1.4rem;
+  }
+}
+
 /* Section Header styling */
 .section-header {
   margin-bottom: 3.5rem;
@@ -305,6 +333,26 @@ button {
   justify-content: center;
   padding: 1.5rem;
   animation: fadeIn 0.25s ease-out;
+}
+
+@media (max-width: 480px) {
+  .modal-overlay {
+    padding: 0.65rem;
+    align-items: center;
+  }
+
+  .modal-content {
+    max-height: 94dvh;
+    border-radius: 20px;
+  }
+
+  .modal-close-btn {
+    top: 0.75rem;
+    right: 0.75rem;
+    width: 44px;
+    height: 44px;
+    z-index: 1;
+  }
 }
 
 .modal-content {

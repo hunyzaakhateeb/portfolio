@@ -324,10 +324,36 @@
 }
 
 @media (max-width: 680px) {
+  .hero-viewport {
+    min-height: 100svh;
+    padding: 5rem 1rem 2.5rem;
+  }
+
+  .backup-menu-btn {
+    top: 1rem;
+    right: 1rem;
+    padding: 0.55rem 0.9rem;
+  }
+
+  .hero-name-header {
+    width: 100%;
+  }
+
+  .hero-badge-tag {
+    max-width: 100%;
+    white-space: normal;
+  }
+
+  .hero-title-name {
+    font-size: clamp(1.8rem, 8vw, 2.8rem);
+    line-height: 1.05;
+    overflow-wrap: anywhere;
+  }
+
   .hero-character-composition {
     height: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     gap: 0.75rem;
     align-items: center;
     justify-items: center;
@@ -340,6 +366,10 @@
 
   .scattered-nav {
     position: relative;
+    width: 100%;
+    min-height: 44px;
+    justify-content: center;
+    gap: 0.35rem;
     top: auto !important;
     left: auto !important;
     right: auto !important;
@@ -366,6 +396,47 @@
   .nav-contact {
     grid-column: 2;
     grid-row: 3;
+  }
+
+  .hero-dialogue-wrapper {
+    width: 100%;
+    padding: 0 0.25rem;
+  }
+
+  .dialogue-box {
+    width: 100%;
+    max-width: 520px;
+    padding: 1rem 1.25rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .hero-title-name {
+    font-size: clamp(1.5rem, 8vw, 2.3rem);
+  }
+
+  .hero-character-composition {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.5rem;
+  }
+
+  .hero-character-anchor,
+  .nav-work,
+  .nav-about,
+  .nav-community,
+  .nav-contact {
+    grid-column: 1;
+  }
+
+  .nav-work { grid-row: 2; }
+  .nav-about { grid-row: 3; }
+  .nav-community { grid-row: 4; }
+  .nav-contact { grid-row: 5; }
+
+  .scattered-nav {
+    max-width: 240px;
+    padding: 0.55rem 0.8rem;
+    font-size: 0.82rem;
   }
 }
 

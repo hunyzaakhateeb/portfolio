@@ -96,8 +96,20 @@
 @media (max-width: 768px) {
   .case-study-modal {
     padding: 1.5rem;
+    padding-top: 4rem;
+    max-height: 94vh;
+    max-height: 94dvh;
   }
+
   .cs-body-grid {
     grid-template-columns: 1fr;
+  }
+
+  .cs-block {
+    padding: 1rem;
+  }
+
+  .cs-footer {
+    justify-content: flex-start;
   }
 }

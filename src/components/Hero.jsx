@@ -10,7 +10,7 @@ const DIALOGUE_MESSAGES = [
   "Welcome to my little corner of the internet.",
   "Yeah, this tiny pixel person. That’s me, Hunyzaa!",
   "Computer Science student with a soft spot for design and creativity.",
-  "Making the internet a little less boring.a"
+  "Making the internet a little less boring."
 ];
 
 export default function Hero({ onOpenMenu, characterExitProgress = 0 }) {

@@ -89,3 +89,36 @@
   padding-top: 1rem;
   border-top: 1px solid var(--border-color);
 }
+
+@media (max-width: 600px) {
+  .resume-modal {
+    max-height: 94dvh;
+    padding: 1.25rem;
+    padding-top: 4rem;
+  }
+
+  .resume-header {
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .resume-name {
+    font-size: 1.6rem;
+  }
+
+  .resume-contact-line,
+  .item-link {
+    overflow-wrap: anywhere;
+  }
+
+  .resume-item-row {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+
+  .resume-body {
+    gap: 1.25rem;
+  }
+}
